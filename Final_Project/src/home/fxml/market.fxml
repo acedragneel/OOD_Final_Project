@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1152.0" style="-fx-background-color: linear-gradient(to bottom, #FFC0CB, #FFFFFF, #87CEFA);" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.controllers.MarketController">
+   <children>
+      <GridPane layoutX="67.0" prefHeight="720.0" prefWidth="1043.0" style="-fx-alignment: center; -fx-padding: 10px; -fx-hgap: 20px; -fx-vgap: 20px;">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="341.0" minHeight="10.0" prefHeight="341.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="340.0" minHeight="10.0" prefHeight="339.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <AnchorPane layoutX="520.0" layoutY="301.0" prefHeight="260.0" prefWidth="237.0" style="-fx-border-color: gray; -fx-border-image-width: 10px; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-color: white;">
+               <children>
+                  <VBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="-1.0" prefHeight="339.0" prefWidth="308.0" style="-fx-spacing: 10;">
+                     <children>
+                        <ImageView fitHeight="79.0" fitWidth="143.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../imgs/BlueCashEveryday.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="30.0" prefWidth="245.0" text="Blue Cash Everyday">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Label>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Earn up to $150 Back when you shop with PayPalEarn 20% back as a statement credit on purchases." wrappingWidth="286.3132019042969">
+                           <font>
+                              <Font size="18.0" />
+                           </font></Text>
+                        <HBox prefHeight="39.0" prefWidth="211.0">
+                           <children>
+                              <VBox prefHeight="34.0" prefWidth="100.0">
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="70.0" text="Cash back">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font></Label>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="3%" wrappingWidth="54.078147888183594">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font></Text>
+                                 </children>
+                              </VBox>
+                              <VBox layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="70.0" text="Annual Fee">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font></Label>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="\$0" wrappingWidth="53.49188232421875">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font></Text>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <Button fx:id="btn1apply" mnemonicParsing="false" onAction="#addOnClicks1" prefHeight="36.0" prefWidth="303.0" style="-fx-background-color: skyblue; -fx-text-fill: white;" text="Apply Now">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font></Button>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="260.0" prefWidth="237.0" style="-fx-border-color: gray; -fx-border-image-width: 10px; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-color: white;" GridPane.columnIndex="1">
+               <children>
+                  <VBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="-1.0" prefHeight="339.0" prefWidth="308.0" style="-fx-spacing: 10;">
+                     <children>
+                        <ImageView fitHeight="79.0" fitWidth="143.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../imgs/BlueCashPreferred.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="30.0" prefWidth="245.0" text="Blue Cash Preferred">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Label>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Earn up to $300 after you spend $3,000 in purchases on your new Card within the first 6 months." wrappingWidth="286.3132019042969">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <HBox prefHeight="39.0" prefWidth="211.0">
+                           <children>
+                              <VBox prefHeight="34.0" prefWidth="100.0">
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="70.0" text="Cash back">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="6%" wrappingWidth="54.078147888183594">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </VBox>
+                              <VBox layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="70.0" text="Annual Fee">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="\$0" wrappingWidth="53.49188232421875">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <Button fx:id="btn2apply" mnemonicParsing="false" onAction="#addOnClicks2" prefHeight="36.0" prefWidth="303.0" style="-fx-background-color: skyblue; -fx-text-fill: white;" text="Apply Now">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="260.0" prefWidth="237.0" style="-fx-border-color: gray; -fx-border-image-width: 10px; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-color: white;" GridPane.columnIndex="2">
+               <children>
+                  <VBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="-1.0" prefHeight="339.0" prefWidth="308.0" style="-fx-spacing: 10;">
+                     <children>
+                        <ImageView fitHeight="79.0" fitWidth="143.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../imgs/ChaseFreedomFlex.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="30.0" prefWidth="245.0" text="Chase Freedom Flex">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Label>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Earn a $200 Bonus after you spend $500 on purchases in your first 3 months from account opening." wrappingWidth="286.3132019042969">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <HBox prefHeight="39.0" prefWidth="211.0">
+                           <children>
+                              <VBox prefHeight="34.0" prefWidth="100.0">
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="70.0" text="Cash back">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1% - 5%" wrappingWidth="54.078147888183594">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </VBox>
+                              <VBox layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="70.0" text="Annual Fee">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="\$0" wrappingWidth="53.49188232421875">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <Button fx:id="btn3apply" mnemonicParsing="false" onAction="#addOnClicks3" prefHeight="36.0" prefWidth="303.0" style="-fx-background-color: skyblue; -fx-text-fill: white;" text="Apply now">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="260.0" prefWidth="237.0" style="-fx-border-color: gray; -fx-border-image-width: 10px; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-color: white;" GridPane.rowIndex="1">
+               <children>
+                  <VBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="-1.0" prefHeight="339.0" prefWidth="308.0" style="-fx-spacing: 10;">
+                     <children>
+                        <ImageView fitHeight="74.0" fitWidth="123.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../imgs/ChaseSapphirePreferred.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="30.0" prefWidth="287.0" text="Chase Sapphire Preferred">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Label>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Earn 60,000 bonus points after you spend $4000 on purchases in the first 3 months." wrappingWidth="286.3132019042969">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <HBox prefHeight="39.0" prefWidth="211.0">
+                           <children>
+                              <VBox prefHeight="34.0" prefWidth="100.0">
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="70.0" text="Cash back">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="60,000 points" wrappingWidth="99.0781478881836">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </VBox>
+                              <VBox layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="70.0" text="Annual Fee">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="\$95" wrappingWidth="53.49188232421875">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <Button fx:id="btn4apply" mnemonicParsing="false" onAction="#addOnClicks4" prefHeight="36.0" prefWidth="303.0" style="-fx-background-color: skyblue; -fx-text-fill: white;" text="Apply now">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="260.0" prefWidth="237.0" style="-fx-border-color: gray; -fx-border-image-width: 10px; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-color: white;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <VBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="-1.0" prefHeight="339.0" prefWidth="308.0" style="-fx-spacing: 10;">
+                     <children>
+                        <ImageView fitHeight="79.0" fitWidth="143.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../imgs/SoFiCreditCard.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="30.0" prefWidth="245.0" text="SoFi Credit Card">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Label>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Upgrade from 2% cash back rewards to 3% cash back rewards for a whole year by getting approved." wrappingWidth="286.3132019042969">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <HBox prefHeight="39.0" prefWidth="211.0">
+                           <children>
+                              <VBox prefHeight="34.0" prefWidth="100.0">
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="70.0" text="Cash back">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="2%" wrappingWidth="54.078147888183594">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </VBox>
+                              <VBox layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="70.0" text="Annual Fee">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="\$0" wrappingWidth="53.49188232421875">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <Button fx:id="btn5apply" mnemonicParsing="false" onAction="#addOnClicks5" prefHeight="36.0" prefWidth="303.0" style="-fx-background-color: skyblue; -fx-text-fill: white;" text="Apply now">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="260.0" prefWidth="237.0" style="-fx-border-color: gray; -fx-border-image-width: 10px; -fx-border-radius: 5px; -fx-border-width: 2px; -fx-background-color: white;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <children>
+                  <VBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="-1.0" prefHeight="339.0" prefWidth="308.0" style="-fx-spacing: 10;">
+                     <children>
+                        <ImageView fitHeight="79.0" fitWidth="143.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../imgs/ThePlatinumCard.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="30.0" prefWidth="245.0" text="The Platinum Card">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Label>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Earn a $200 Bonus after you spend $500 on purchases in your first 3 months from account opening." wrappingWidth="286.3132019042969">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <HBox prefHeight="39.0" prefWidth="211.0">
+                           <children>
+                              <VBox prefHeight="34.0" prefWidth="100.0">
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="70.0" text="Cash back">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="1% - 5%" wrappingWidth="54.078147888183594">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </VBox>
+                              <VBox layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="70.0" text="Annual Fee">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="\$0" wrappingWidth="53.49188232421875">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <Button fx:id="btn6apply" mnemonicParsing="false" onAction="#addOnClicks6" prefHeight="36.0" prefWidth="303.0" style="-fx-background-color: skyblue; -fx-text-fill: white;" text="Apply now">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

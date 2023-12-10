@@ -1,0 +1,59 @@
+.root {
+	-fx-font-family: sans-serif; 
+}
+ 
+/* Header */
+.header {
+	-fx-background-color: #1F2937;
+}
+ 
+.background-image {
+    -fx-background-color: linear-gradient(to bottom, #1F2937, #FFFFFF, #1F2937);
+}
+ 
+.header-logo {
+	-fx-hgap: 5;
+}
+ 
+.logo-title {
+	-fx-font-family:  sans-serif;
+	-fx-text-fill:  #e5e7eb
+}
+ 
+.header-btn {
+	-fx-background-color: inherit;
+}
+ 
+/* Side Bar */
+.sideBar {
+	-fx-background-color: linear-gradient(to bottom, #1F2937, #FFFFFF, #1F2937);
+	-fx-alignment: center;
+	-fx-spacing: 35px;
+}
+ 
+.sideBar-btn {
+	-fx-alignment: center-left;
+	-fx-pref-width: 170;
+	-fx-background-color: #3882f6; 
+	-fx-border-radius: 5px;
+	-fx-background-radius: 10px;
+	-fx-border-width: 2px;
+	-fx-border-color: white;
+	-fx-text-fill: white;
+	-fx-font-size: 15;
+	-fx-font-weight: bold;
+}
+ 
+/* Main */
+.main {
+}
+ 
+/* Footer */
+.footer {
+	-fx-background-color: #1F2937;
+	-fx-alignment: center ;
+}
+ 
+.footer-text {
+	-fx-fill: #e5e7eb;
+}

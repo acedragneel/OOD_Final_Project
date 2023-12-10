@@ -1,0 +1,9 @@
+.labelFont{
+	-fx-font-family: Arial; 
+}
+
+.titleSize {
+	-fx-font-size: 29px;
+	-fx-padding: 10px 10px 10px 0px;
+}
+
